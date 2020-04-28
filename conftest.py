@@ -14,7 +14,7 @@ def browser(request):
     print("\nstart browser for test..")
     browser = webdriver.Chrome(options=options)
     yield browser
-    # ожидание чтобы визуально оценить что браузер открылся на испанском языке!
+    # ожидание чтобы визуально оценить на каком языке открылся браузер
     time.sleep(10)
     print("\nquit browser..")
     browser.quit()
